@@ -1,7 +1,7 @@
 
 
 :root {
-    --bg-color: #121212;         /* Very dark background */
+    --bg-color: #1c1c1c;         /* Very dark background */
     --text-color: #e0e0e0;       /* Light gray text color */
     --accent-color: #ff9800;     /* Accent color (orange) */
     --border-color: #333333;     /* Dark border color */
@@ -17,7 +17,7 @@ body {
 
 /* Navbar styling */
 .navbar {
-    background-color: #1a1a1a; /* Slightly lighter than background */
+    background-color: #111111; /* Slightly lighter than background */
     border-bottom: 1px solid var(--border-color);
 }
 

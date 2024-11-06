@@ -1,19 +1,44 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block page_content %}
-<!-- main banner -->
-    <section class="bgimage" id="home">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
-                    <h2 class="hero_title">Josh Rawlinson</h2>
-                    <p class="hero_desc">MEng Electrical & Electronic Engineer</p>
-                </div>
+<!-- Main Banner -->
+<section class="bgimage" id="home">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <!-- Left Column: Text -->
+            <div class="col-md-6 hero-text text-center">
+                <h2 class="hero_title">Josh Rawlinson</h2>
+                <p class="hero_desc">
+                    <span class="highlight highlight-electrical">Electrical</span> & 
+                    <span class="highlight highlight-electronic">Electronic</span> Engineer
+                </p>
+            </div>
+            
+            <!-- Right Column: Image -->
+            <div class="col-md-6 text-center">
+                <img src="{% static 'pages/img/fractal.png' %}" alt="Profile Image" class="img-fluid" />
             </div>
         </div>
-    </section>
-</body>
+    </div>
+</section>
+
+<!-- Welcome Area -->
+ <section>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-12 text-center">
+                <h2 class="welcome_title">Welcome!</h2>
+            </div>
+            <div class="col-md-12 text-start">
+            <p class="welcome_text">
+                Hi my name is Josh, I am an engineer
+            </p>
+            </div>
+        </div>
+    </div>
+ </section>
+
+
 {% endblock page_content %}
-
-
 

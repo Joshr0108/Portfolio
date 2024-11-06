@@ -1,0 +1,29 @@
+/* Basic styles for text layout */
+.hero_title {
+    font-family: 'Arial', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fbfbfb; /* Adjust based on your background */
+}
+/* Montserrat, Lora ,,, Oswald Merriweather*/
+.hero_desc {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #ffffff; /* Base color for description text */
+}
+
+/* General highlight styles */
+.highlight {
+    padding: 0.2em; /* padding for empahsis */
+    font-weight: bold; /* bold text */
+}
+
+/* Highlight styles */
+.highlight-electrical {
+    color: #27a16a; /* Example contrasting color for 'Electrical' */
+}
+
+.highlight-electronic {
+    color: #772803; /* Example contrasting color for 'Electronic' */
+}
