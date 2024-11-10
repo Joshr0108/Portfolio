@@ -9,3 +9,9 @@ class CVFile(models.Model):
 
     def __str__(self):
         return f"CV uploaded on  {self.upload_at}"
+
+class Skill(models.Model):
+    name = models.CharField(max_length=50)
+
+    def __str__(self):
+        return self.name

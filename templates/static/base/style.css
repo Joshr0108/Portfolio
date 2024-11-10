@@ -24,15 +24,17 @@ While background?
     --border-color: #333333;     /* Dark border colour */
     --navfoot-bg-color: #6b8e89; /* Nav/footer background colour */
     --navfoot-color: #fdf6e3;    /* Nav/footer colour */
-    --hover-color: #6fa9d1;      /* Button hover colour */
+    --hover-color: #008000;      /* Button hover colour */
     --accent-color: #B87333;     /* Button accent colour */
+    --body-font: 'Consolas';
+    --header-font: 'Roboto';
 }
 
 /* Apply theme to the body and general text */
 body {
     background-color: var(--bg-color);  /* Use the cream background */
     color: var(--text-color);           /* Use the bluish text colour */
-    font-family: 'JetBrains Mono';   /* Handwritten font */
+    font-family: var(--body-font);   /* Handwritten font */
     margin-top: 70px;                   /* Offset for the fixed navbar */
 }
 
@@ -42,8 +44,8 @@ body {
     font-weight: bold;
 }
 
-.navbar .nav-link .navbar-brand  {
-    color: var(--text-color); /* Set navbar text colour */
+.nav-colour  {
+    color: var(--accent-color); /* Set navbar text colour */
 }
 
 .lightning-bolt {
@@ -57,7 +59,7 @@ body {
 
 .navbar-centre {
     flex-grow: 1;
-    font-family: 'Roboto';
+    font-family: var(--header-font);
     text-align: center;
     font-size: 2rem;
     font-weight: bolder;

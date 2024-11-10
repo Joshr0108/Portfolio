@@ -1,0 +1,19 @@
+.title {
+    font-family: 'Roboto';
+    font-weight: bold;
+    text-align: center;
+    color: var(--accent-color);
+}
+
+.card-title {
+    font-family: 'Roboto';
+    color: var(--hover-color);
+}
+
+.card-text {
+    font-family: 'Consolas';
+}
+
+.btn {
+    background-color: var(--hover-color);
+}

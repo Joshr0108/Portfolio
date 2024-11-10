@@ -5,39 +5,68 @@
 <!-- Main Banner -->
 <section class="bgimage" id="home">
     <div class="container-fluid">
-        <div class="row align-items-center">
-            <!-- Left Column: Text -->
-            <div class="col-md-6 hero-text text-center">
-                <h2 class="hero_title">Josh Rawlinson</h2>
+        <div class="row align-items-center justify-content-center">
+            
+            <!-- Left Column: Skills Table 
+            <div class="col-md-3 text-center">
+                <div class="skills-table">
+                    <h5>Key Skills</h5>
+                    <table>
+                        <tbody>
+                            {% for skill in skills %}
+                            <tr>
+                                <td>{{ skill.name }}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        -->
+
+            <!-- Middle Column: Text -->
+            <div class="col-md-9 text-center hero-text">
+                <h2 class="hero_title">Hello, I'm Josh Rawlinson</h2>
                 <p class="hero_desc">
-                    <span class="highlight highlight-electrical">Electrical</span> & 
-                    <span class="highlight highlight-electronic">Electronic</span> Engineer
+                    An<span class="highlight highlight-electrical">ELECTRICAL</span>
+                    and<span class="highlight highlight-electronic">ELECTRONIC</span> 
+                    student, passionate about all things innovative
                 </p>
             </div>
             
             <!-- Right Column: Image -->
-            <div class="col-md-6 text-center">
+            <div class="col-md-3 text-center">
                 <img src="{% static 'pages/img/fractal.png' %}" alt="Profile Image" class="img-fluid" />
             </div>
         </div>
     </div>
 </section>
 
+
+
 <!-- Welcome Area -->
- <section>
+ <section id="Welcome">
     <div class="container">
-        <div class="row align-items-center">
+        <div class="row align-items-start">
             <div class="col-md-12 text-center">
-                <h2 class="welcome_title">Welcome!</h2>
+                <h2 class="welcome-text">Who am I</h2>
             </div>
             <div class="col-md-12 text-start">
-            <p class="welcome_text">
-                HEllo
+            <p class="welcome-text text-center">
+                I'm an Engineer studying Electrical & Electronic Engineering with a strong interst in embedd system, coding development and solving complex problems through technology. My Goal is to combine my technical knowledge wiht real-world applications to create a meaningful difference in our world. 
             </p>
             </div>
         </div>
     </div>
  </section>
+ <section id="Skills">
+    <div class="container">
+        
+    </div>
+ </section>
+
+
+
 
 
 {% endblock page_content %}

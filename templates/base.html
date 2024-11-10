@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="{% static 'base/style.css' %}"> 
     <!-- Link to app-specific CSS for 'pages' -->
     <link rel="stylesheet" href="{% static 'pages/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'projects/style.css' %}">
     <!-- Link to Fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!--Awesome Fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!--Google Fonts-->
@@ -21,21 +22,23 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
         <div class="container">
-            <a class="lightning-bolt">
+            <a class="lightning-bolt col-md-4">
                 <i class="fas fa-bolt fa-md"></i> <!-- Lightning bolt logo -->
             </a> 
-            <div class="navbar-centre">My Portfolio</div>
+            <div class="navbar-centre col-md-4">My Portfolio</div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse text-center col-md-4" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#home">Home</a>
+                        <a class="nav-link nav-colour" href="#home">Home</a>
                     </li>
+                    <!-- If I want more buttons...
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link nav-colour" href="#about">About</a>
                     </li>
+                -->
                     <li class="nav-item">
                         <a class="nav-link portfolio-btn" href="projects">Projects</a>
                     </li>
@@ -45,7 +48,7 @@
     </nav>
 
     <!-- Page Content Block -->
-    <div class="container mt-5 pt-5"> <!-- Add margin-top for navbar offset -->
+    <div class="container mt-15 pt-5"> <!-- Add margin-top for navbar offset -->
         {% block page_content %}{% endblock page_content %}
     </div>
 
@@ -56,12 +59,12 @@
                 <i class="fab fa-github"></i>
             </a>
             |
-            <a href="https://www.linkedin.com/in/josh-rawlinson" target="_blank" class="footer-text mx-2">
-                <i class="fab fa-linkedin"></i>
+            <a href="{{ cv.file.url }}" target="_blank" class="footer-text mx-2">
+                <i class="fas fa-file-alt"> CV</i>
             </a>
             |
-            <a href="{{ cv.file.url }}" target="_blank" class="footer-text mx-2">
-                <i class="fas fa-file-alt"></i>
+            <a href="https://www.linkedin.com/in/josh-rawlinson" target="_blank" class="footer-text mx-2">
+                <i class="fab fa-linkedin"></i>
             </a>
         </div>
     </footer>

@@ -1,6 +1,6 @@
 /* Basic styles for text layout */
 .hero_title {
-    font-family: inherit;    /* Inherit font from base */
+    font-family: var(--header-font);    /* Inherit font from base */
     font-size: 2.5rem;       /* Adjusted font size */
     font-weight: 700;        /* Bold weight */
     color: inherit;          /* Inherit text color from base */
@@ -8,7 +8,7 @@
 
 /* Description styling */
 .hero_desc {
-    font-family: inherit;    /* Inherit font from base */
+    font-family: var(--body-font);    /* Inherit font from base */
     font-size: 1.5rem;       /* Adjusted font size */
     font-weight: 400;        /* Normal weight */
     color: inherit;          /* Inherit text color from base */
@@ -17,7 +17,7 @@
 /* General highlight styles */
 .highlight {
     padding: 0.2em;          /* Padding for emphasis */
-    font-weight: bold;       /* Bold text */
+    font-weight: bolder;       /* Bold text */
 }
 
 /* Specific highlight styles */
@@ -28,3 +28,30 @@
 .highlight-electronic {
     color: #B87333;          /* Custom color for 'Electronic' */
 }
+
+.welcome-text {
+    background-color: #008000;
+    border: 2px solid #008000;
+    border-radius: 20px;
+}
+
+
+
+/* for redundent skills table
+.skills-table {
+    width: 25%;
+    float: left;
+    padding: 10px;
+    background-color: 'inherit';
+}
+
+.skills-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.skills-table th, .skills-table td {
+    padding: 8px;
+    text-align: center;
+}
+*/
