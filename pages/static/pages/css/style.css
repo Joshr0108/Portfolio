@@ -22,19 +22,45 @@
 
 /* Specific highlight styles */
 .highlight-electrical {
-    color: #008000;          /* Custom color for 'Electrical' */
+    color: var(--hover-color);          /* Custom color for 'Electrical' */
 }
 
 .highlight-electronic {
-    color: #B87333;          /* Custom color for 'Electronic' */
+    color: var(--accent-color);          /* Custom color for 'Electronic' */
 }
 
-.welcome-text {
-    background-color: #008000;
-    border: 2px solid #008000;
-    border-radius: 20px;
+
+#Welcome {
+    background-color: var(--hover-color); /* Blue border */
+    padding: 10px; /* Add some padding for spacing */
+    width: 100%; /* Ensure the section takes up full width */
+    box-sizing: border-box; /* Includes padding in width calculation */
+    margin: 0; /* Remove any margin */
+    border-radius: 5px;
 }
 
+#home {
+    padding: 50px;
+}
+
+#Skills-Learning {
+    padding:  15px;
+    padding-top: 50px;
+}
+
+.skills-border {
+    border: 2px solid var(--accent-color);
+    padding: 20px; 
+    box-sizing: border-box;
+    margin: 5px;
+}
+
+.learning-border {
+    border: 2px solid var(--accent-color);
+    padding: 20px; 
+    box-sizing: border-box;
+    margin: 5px;
+}
 
 
 /* for redundent skills table

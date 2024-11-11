@@ -13,8 +13,8 @@
                 {% endif %}
             <div class="card-body">
                 <h5 class="card-title">{{ project.title }}</h5>
-                <p class="card-text">{{ project.description }}</p>
-                <a href="{% url 'project_detail' project.pk %}"
+                <p class="card-tech">{{ project.technology }}</p>
+                <a class="" href="{% url 'project_detail' project.pk %}"
                    class="btn btn-primary">
                     Read More
                 </a>

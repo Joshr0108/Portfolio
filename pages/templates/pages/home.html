@@ -53,17 +53,34 @@
             </div>
             <div class="col-md-12 text-start">
             <p class="welcome-text text-center">
-                I'm an Engineer studying Electrical & Electronic Engineering with a strong interst in embedd system, coding development and solving complex problems through technology. My Goal is to combine my technical knowledge wiht real-world applications to create a meaningful difference in our world. 
+                I'm an student studying Electrical & Electronic Engineering with a strong interst in embedd system, coding development and solving complex problems through technology. My Goal is to combine my technical knowledge wiht real-world applications to create a meaningful difference in our world. 
             </p>
             </div>
         </div>
     </div>
  </section>
- <section id="Skills">
+ <section id="Skills-Learning">
     <div class="container">
-        
+        <div class="row">
+            <div class="col-md-2 text-center skills-border">
+                <h2 class="skills-heading">Skills</h2>
+                <div class="skills-list text-start">
+                    {% for skill in skills %}
+                        <p>{{ skill.name }}</p>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="col-md-9 text-center learning-border">
+                <h2 class="learning-heading">Continuous Personal Development</h2>
+                <div class="learning-list">
+                    {% for learning in learnings %}
+                        <p>{{ learning.description }}</p>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
     </div>
- </section>
+</section>
 
 
 

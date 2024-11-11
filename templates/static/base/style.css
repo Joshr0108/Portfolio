@@ -22,9 +22,9 @@ While background?
     --bg-color: #121212;         /* Cream background */
     --text-color: #e0e0e0;       /* Bluish text colour */
     --border-color: #333333;     /* Dark border colour */
-    --navfoot-bg-color: #6b8e89; /* Nav/footer background colour */
+    --hover-color: #6b8e89; /* Nav/footer background colour */
     --navfoot-color: #fdf6e3;    /* Nav/footer colour */
-    --hover-color: #008000;      /* Button hover colour */
+    --hove-color: #008000;      /* Button hover colour */
     --accent-color: #B87333;     /* Button accent colour */
     --body-font: 'Consolas';
     --header-font: 'Roboto';

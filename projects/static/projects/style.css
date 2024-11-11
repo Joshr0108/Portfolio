@@ -5,15 +5,25 @@
     color: var(--accent-color);
 }
 
+.card-body {
+    background-color: var(--bg-color);
+    border-radius: 5px;
+}
+
 .card-title {
-    font-family: 'Roboto';
+    font-family: var(--header-font);
     color: var(--hover-color);
 }
 
 .card-text {
-    font-family: 'Consolas';
+    font-family: var(--body-font);
 }
 
 .btn {
     background-color: var(--hover-color);
+}
+
+.card-tech {
+    font-family: var(--body-font);
+    color: var(--accent-color);
 }
