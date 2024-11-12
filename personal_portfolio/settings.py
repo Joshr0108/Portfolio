@@ -25,8 +25,9 @@ SECRET_KEY = 'django-insecure-c-gibk**c_8jo#n_65c9q+5l)11kp2x!3(q(=nm)&3vfn10#4q
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['JoshR.eu.pythonanywhere.com']
-
+ALLOWED_HOSTS = ['JoshR.eu.pythonanywhere.com'] # To test remove this 
+if ALLOWED_HOSTS:
+    print("delete allowed hosts in settings.py for test")
 
 # Application definition
 
@@ -127,7 +128,11 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
     BASE_DIR / "templates/static",
+    BASE_DIR / "pages/static/pages/css",
+    BASE_DIR / "projects/static/projects",
 ]
+
+STATIC_ROOT = BASE_DIR / "staticfiles"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
