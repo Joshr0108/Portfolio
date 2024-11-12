@@ -1,0 +1,83 @@
+/* Basic styles for text layout */
+.hero_title {
+    font-family: var(--header-font);    /* Inherit font from base */
+    font-size: 2.5rem;       /* Adjusted font size */
+    font-weight: 700;        /* Bold weight */
+    color: inherit;          /* Inherit text color from base */
+}
+
+/* Description styling */
+.hero_desc {
+    font-family: var(--body-font);    /* Inherit font from base */
+    font-size: 1.5rem;       /* Adjusted font size */
+    font-weight: 400;        /* Normal weight */
+    color: inherit;          /* Inherit text color from base */
+}
+
+/* General highlight styles */
+.highlight {
+    padding: 0.2em;          /* Padding for emphasis */
+    font-weight: bolder;       /* Bold text */
+}
+
+/* Specific highlight styles */
+.highlight-electrical {
+    color: var(--hover-color);          /* Custom color for 'Electrical' */
+}
+
+.highlight-electronic {
+    color: var(--accent-color);          /* Custom color for 'Electronic' */
+}
+
+
+#Welcome {
+    background-color: var(--hover-color); /* Blue border */
+    padding: 10px; /* Add some padding for spacing */
+    width: 100%; /* Ensure the section takes up full width */
+    box-sizing: border-box; /* Includes padding in width calculation */
+    margin: 0; /* Remove any margin */
+    border-radius: 5px;
+}
+
+#home {
+    padding: 50px;
+}
+
+#Skills-Learning {
+    padding:  15px;
+    padding-top: 50px;
+}
+
+.skills-border {
+    border: 2px solid var(--accent-color);
+    padding: 20px; 
+    box-sizing: border-box;
+    margin: 5px;
+}
+
+.learning-border {
+    border: 2px solid var(--accent-color);
+    padding: 20px; 
+    box-sizing: border-box;
+    margin: 5px;
+}
+
+
+/* for redundent skills table
+.skills-table {
+    width: 25%;
+    float: left;
+    padding: 10px;
+    background-color: 'inherit';
+}
+
+.skills-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.skills-table th, .skills-table td {
+    padding: 8px;
+    text-align: center;
+}
+*/

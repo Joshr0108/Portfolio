@@ -1,0 +1,108 @@
+/* Root variables for the theme
+Cream: #F5F5DC
+Blue: #1E3A8A
+Copper: #B87333
+Bluish Gray : #6b8e89
+code green: #008000
+Black Background?
+    --bg-color: #121212;          Very dark background 
+    --text-color: #e0e0e0;        Light gray text color 
+    --accent-color: #ff9800;      Accent color (orange) 
+    --border-color: #333333;      Dark border color 
+While background?
+        --bg-color: #F5F5DC;      Cream background 
+    --text-color: #1E3A8A;        Bluish text colour 
+    --border-color: #333333;      Dark border colour 
+    --navfoot-bg-color: #6b8e89;  Nav/footer background colour 
+    --navfoot-color: #fdf6e3;     Nav/footer colour 
+    --hover-color: #6fa9d1;       Button hover colour 
+    --accent-color: #B87333;      Button Accent colour
+*/
+:root {
+    --bg-color: #121212;         /* Cream background */
+    --text-color: #e0e0e0;       /* Bluish text colour */
+    --border-color: #333333;     /* Dark border colour */
+    --hover-color: #6b8e89; /* Nav/footer background colour */
+    --navfoot-color: #fdf6e3;    /* Nav/footer colour */
+    --hove-color: #008000;      /* Button hover colour */
+    --accent-color: #B87333;     /* Button accent colour */
+    --body-font: 'Consolas';
+    --header-font: 'Roboto';
+}
+
+/* Apply theme to the body and general text */
+body {
+    background-color: var(--bg-color);  /* Use the cream background */
+    color: var(--text-color);           /* Use the bluish text colour */
+    font-family: var(--body-font);   /* Handwritten font */
+    margin-top: 70px;                   /* Offset for the fixed navbar */
+}
+
+/* Navbar styling */
+.navbar, .footer {
+    background-color: var(--bg-color);  /* Slightly lighter background than body */
+    font-weight: bold;
+}
+
+.nav-colour  {
+    color: var(--accent-color); /* Set navbar text colour */
+}
+
+.lightning-bolt {
+    color: var(--accent-color);
+    font-size: 2rem;
+}
+
+.navbar .nav-link:hover, .navbar .navbar-brand:hover {
+    color: var(--accent-color); /* Change text colour on hover */
+}
+
+.navbar-centre {
+    flex-grow: 1;
+    font-family: var(--header-font);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.footer .footer-text {
+    font-family: 'Nunito';
+    color: var(--text-color); /* Set navbar text colour */
+    color: var(--accent-color); /* Change text colour on hover */
+}
+
+
+/* Link button colors */
+a {
+    color: var(--accent-color); /* Set default link colour to accent colour */
+}
+
+a:hover {
+    color: var(--hover-color); /* Change link colour when hovered */
+}
+
+/* Buttons, inputs, and form elements */
+input, button {
+    background-color: var(--bg-color);   /* Background colour for inputs/buttons */
+    color: var(--text-color);             /* Text colour */
+    border: 1px solid var(--border-color); /* Dark border */
+    padding: 10px;                        /* Padding for comfort */
+}
+
+input:focus, button:focus {
+    outline: none;                         /* Remove default focus outline */
+    border-color: var(--accent-color);    /* Change border color when focused */
+}
+
+.portfolio-btn {
+    border: 0.5px solid var(--text-color);
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    border-radius: 20px;
+    text-transform: capitalize;
+}
+
+/* Additional styling for container and text elements */
+.container {
+    padding: 20px; /* Add padding around the container for spacing */
+}

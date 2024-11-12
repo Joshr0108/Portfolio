@@ -22,8 +22,10 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("", include("pages.urls")),  # For homepage
-    path("projects/", include("projects.urls")), # For Projects section
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    path("projects/", include("projects.urls")),  # For Projects section
+]
 
+# Serve static files in development (when DEBUG=True)
 if settings.DEBUG:
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

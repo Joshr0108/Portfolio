@@ -23,11 +23,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-c-gibk**c_8jo#n_65c9q+5l)11kp2x!3(q(=nm)&3vfn10#4q'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['JoshR.eu.pythonanywhere.com'] # To test remove this 
-if ALLOWED_HOSTS:
-    print("delete allowed hosts in settings.py for test")
+ALLOWED_HOSTS = [] # To test remove this 
+
 
 # Application definition
 
@@ -127,7 +126,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-    BASE_DIR / "templates/static/base",
+    BASE_DIR / "static",
     BASE_DIR / "pages/static/pages/css",
     BASE_DIR / "projects/static/projects",
 ]
