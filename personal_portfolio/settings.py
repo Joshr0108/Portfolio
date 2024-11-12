@@ -85,8 +85,8 @@ DATABASES = {
 }
 
 
-MEDIA_ROOT = BASE_DIR / "uploads/"
 MEDIA_URL = "/media/"
+MEDIA_ROOT = BASE_DIR / "uploads/"
 
 
 # Password validation
