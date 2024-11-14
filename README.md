@@ -6,6 +6,7 @@
 2. [Features](#features)
 3. [Technology Used](#technology-used)
 4. [Development Process](#development-process)
+    - [Planning & Design](#planning--design)
     - [Installing](#installing)
     - [Deployment](#deployment)
 
@@ -26,6 +27,13 @@ This is a portfolio website built to showcase projects, skills and experience. I
 - Git/GitHub: Code versioning, management and deployment
 
 # Development Process
+
+## Planning & Design
+I Designed the page to meet my needs, It would centre around a projects page but would first greet the viewer with a welcome page, summarising key skills and CPD. The look would be minimalist and limited on bloat, the  dark theme and monospaced font suited that. 
+I had Python as my backend to lower development time and leverage existing knowledge of the language. With minimal pre-existing knowledge of frontend language I used bootstrap as a framework. 
+I built the Apps and associated models, the apps were `pages` and `projects` each representing the homepage and projects page respectively. Within those I needed models to store the data for skills, CPD, CV and projects. 
+I created a base template and statics folder for components that would be used throughout the website such as the footer and header to which each page could then add to. In my base `.css` file I create a frame that would set the colours and fonts so that they could be inherited to any additional apps.
+With each addition there was bugging and testing to confirm features were functional and aesthetic.
 
 ## Installing
 *To set up locally*
