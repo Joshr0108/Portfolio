@@ -27,3 +27,7 @@
     font-family: var(--body-font);
     color: var(--accent-color);
 }
+
+.project-card:hover {
+    transform: scale(1.05);  /* Slight scaling on hover for interaction effect */
+}
